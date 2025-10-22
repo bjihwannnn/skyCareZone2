@@ -1,0 +1,47 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스카이케어존 | 에어컨 청소 · 소독 · 방역 전문</title>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-skycare-light text-gray-800 font-[Noto_Sans_KR] selection:bg-skycare-warm/50">
+    <!-- 헤더 -->
+    <header class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-skycare-darkblue font-bold text-xl tracking-tight">
+          <a href="/">스카이케어존</a>
+        </h1>
+        <nav class="space-x-6 text-gray-700 font-medium">
+          <a href="/" class="hover:text-skycare-blue transition-colors">홈</a>
+          <a href="/AirConditioner" class="hover:text-skycare-blue transition-colors">에어컨 청소</a>
+          <a href="/Cleaning" class="hover:text-skycare-blue transition-colors">건물 클리닝</a>
+          <a href="/Disinfection" class="hover:text-skycare-blue transition-colors">방역 서비스</a>
+          <a href="#contact" class="hover:text-skycare-orange transition-colors">문의</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="max-w-6xl mx-auto px-6 md:px-8 py-12 md:py-20">
+      <slot />
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-white border-t mt-20 py-8 text-center text-gray-500 text-sm">
+      © 2025 스카이케어존 | 깨끗함과 따뜻함을 함께
+    </footer>
+  </body>
+</html>
