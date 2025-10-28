@@ -1,46 +1,113 @@
-# Astro Starter Kit: Basics
+# 🌤️ SkyCareZone — 에어컨 청소 · 클리닝 · 방역 전문 서비스
 
-```sh
-npm create astro@latest -- --template basics
+> **깨끗함과 따뜻함을 중심으로.**  
+> 빠르고 안정적인 정적 웹사이트를 목표로 **Astro + Tailwind CSS** 기반으로 제작.
+
+
+
+## 🚀 기술 스택
+
+| 구분 | 기술 | 설명 |
+|------|------|------|
+| **Framework** | [Astro](https://astro.build/)
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/)
+| **Language** | HTML, CSS, JavaScript |
+| **Font** | [Noto Sans KR](https://fonts.google.com/specimen/Noto+Sans+KR)
+
+
+
+## 🧱 프로젝트 구조
+
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+src/
+├─ layouts/
+│  └─ BaseLayout.astro        # 공통 레이아웃 (헤더, 푸터, SEO/OG 메타 포함)
+│
+├─ components/
+│  ├─ HeroSection.astro       # 페이지 상단 히어로 섹션
+│  ├─ ProcedureSection.astro  # 절차 안내 카드 섹션
+│  ├─ NoticeListSection.astro # 유의사항 리스트
+│  ├─ GallerySection.astro    # 작업사진 갤러리
+│  └─ CTASection.astro        # 하단 문의(Call To Action)
+│
+├─ pages/
+│  ├─ index.astro             # 메인 홈 페이지
+│  ├─ AirConditioner.astro    # 에어컨 청소 서비스 페이지
+│  ├─ Cleaning.astro          # 클리닝 서비스 페이지
+│  └─ Disinfection.astro      # 방역 서비스 페이지
+│
+└─ styles/
+└─ global.css              # Tailwind + SkyCareZone 커스텀 스타일
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+### 📁 layouts
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+| 파일 | 역할 |
+|------|------|
+| **BaseLayout.astro** | 모든 페이지의 공통 레이아웃.<br>헤더·푸터·메인 구조 포함, SEO 및 OG 메타태그 포함. |
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+### 📄 pages
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| 파일 | 역할 |
+|------|------|
+| **index.astro** | 홈페이지 메인 화면.<br>서비스 요약, 소개, CTA(문의 버튼) 섹션으로 구성. |
+| **AirConditioner.astro** | 에어컨 청소 서비스 상세 페이지. |
+| **Cleaning.astro** | 클리닝 서비스 상세 페이지. |
+| **Disinfection.astro** | 방역 서비스 상세 페이지. |
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### 🧩 components
+
+| 파일 | 역할 |
+|------|------|
+| **HeroSection.astro** | 페이지 상단의 메인 이미지 섹션.<br>타이틀, 설명, 버튼, 배경사진 구성. |
+| **ProcedureSection.astro** | 단계별 서비스 절차 카드 구성. |
+| **NoticeListSection.astro** | 유의사항 목록 구성. |
+| **GallerySection.astro** | 서비스 작업사진 갤러리. |
+| **CTASection.astro** | 하단 문의(Call To Action) 섹션. |
+
+---
+
+### 🎨 styles
+
+| 파일 | 역할 |
+|------|------|
+| **global.css** | Tailwind CSS 설정 및 SkyCareZone 커스텀 컬러 정의.<br>`btn-skycare`, `bg-skycare-*`, `text-skycare-*` 등 전역 유틸리티 포함. |
+
+
+
+
+
+## 🎨 주요 디자인 컨셉
+
+- **SkyCare 팔레트**
+  - Light: `#E6F4F9`
+  - Blue: `#3B82F6`
+  - DarkBlue: `#1E3A8A`
+  - Orange: `#F97316`
+  - Warm: `#FDE68A`
+
+
+
+## 🧾 빌드 체크리스트 요약
+
+| 항목                            | 상태 |
+| ----------------------------- | -- |
+| Tailwind 정상 동작                | ✅  |
+| SkyCare 커스텀 색상 적용             | ✅  |
+| HeroSection 배경 정상 렌더링         | ✅  |
+| Gallery lazy-load / alt 속성 적용 | ✅  |
+| SEO/OG 메타 반영                  | ✅  |
+| key 누락 경고 없음                  | ✅  |
+| favicon 표시 확인                 | ✅  |
+
+
+
+### 🧡 Branding Slogan
+
+> **“깨끗함과 따뜻함을 한 번에 — SkyCareZone.”**

@@ -6,7 +6,39 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>스카이케어존 | 에어컨 청소 · 소독 · 방역 전문</title>
+
+    <title>스카이케어존 | 에어컨 청소 · 클리닝 · 방역 전문</title>
+    <meta name="description" content="깨끗함과 따뜻함을 한 번에. 스카이케어존은 에어컨 청소, 클리닝, 방역 서비스를 전문적으로 제공합니다." />
+    <meta name="keywords" content="스카이케어존, 에어컨청소, 클리닝, 방역, 소독, 청소전문, 위생관리" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="스카이케어존" />
+    <meta property="og:title" content="스카이케어존 | 깨끗함과 따뜻함을 한 번에" />
+    <meta property="og:description" content="에어컨 청소 · 클리닝 · 방역 전문 서비스 기업, 스카이케어존." />
+    <meta property="og:image" content="/assets/main.jpg" />
+    <meta property="og:url" content="https://skycarezone.kr/" />
+
+    <!-- 구조화 데이터 (LocalBusiness Schema) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "스카이케어존",
+        "url": "https://skycarezone.kr/",
+        "image": "https://skycarezone.kr/assets/main.jpg",
+        "telephone": "+82-10-3201-0019",
+        "description": "에어컨 청소, 클리닝, 방역 전문",
+        "priceRange": "₩₩",
+        "areaServed": "KR",
+        "sameAs": []
+      }
+    </script>
+
+     <!-- 파비콘 -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon.ico />
 
     <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,9 +59,8 @@ import "../styles/global.css";
         <nav class="space-x-6 text-gray-700 font-medium">
           <a href="/" class="hover:text-skycare-blue transition-colors">홈</a>
           <a href="/AirConditioner" class="hover:text-skycare-blue transition-colors">에어컨 청소</a>
-          <a href="/Cleaning" class="hover:text-skycare-blue transition-colors">건물 클리닝</a>
+          <a href="/Cleaning" class="hover:text-skycare-blue transition-colors">클리닝 서비스</a>
           <a href="/Disinfection" class="hover:text-skycare-blue transition-colors">방역 서비스</a>
-          <a href="#contact" class="hover:text-skycare-orange transition-colors">문의</a>
         </nav>
       </div>
     </header>

@@ -5,26 +5,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout>
   <!-- Hero Section -->
   <section
-    class="relative text-center py-32 overflow-hidden rounded-3xl bg-gradient-to-br from-white to-skycare-light shadow-sm"
+    class="text-center py-28 md:py-36 rounded-3xl bg-gradient-to-br from-white to-skycare-light shadow-sm"
   >
-    <div
-      class="absolute inset-0 bg-[url('/img/aircon-cleaning.jpg')] bg-cover bg-center opacity-10"
-    ></div>
-
-    <div class="relative z-10">
-      <h2 class="text-5xl md:text-6xl font-bold text-skycare-darkblue mb-6 drop-shadow-sm">
-        깨끗함과 따뜻함을 한 번에.
-      </h2>
-      <p class="text-gray-600 text-lg mb-10">
-        가족처럼 정성껏, 스카이케어존이 책임집니다.
-      </p>
-      <a href="#contact" class="btn-skycare text-lg px-8 py-4">무료 견적 문의</a>
-    </div>
+    <h2 class="text-4xl md:text-5xl font-bold text-skycare-darkblue mb-4">
+      깨끗함과 따뜻함을 한 번에.
+    </h2>
+    <p class="text-gray-600 text-base md:text-lg mb-10">
+      가족처럼 정성껏, <strong>스카이케어존</strong>이 책임집니다.
+    </p>
+    <a href="#contact" class="btn-skycare text-base md:text-lg px-8 py-4">무료 견적 문의</a>
   </section>
 
   <!-- Services Section -->
   <section id="services" class="mt-24">
-    <h3 class="text-center text-3xl font-bold text-skycare-darkblue mb-12">
+    <h3 class="text-center text-2xl md:text-3xl font-bold text-skycare-darkblue mb-10">
       우리의 주요 서비스
     </h3>
 
@@ -32,15 +26,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div
         class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all p-8 text-center"
       >
-        <img
-          src="/img/aircon-icon.svg"
-          alt=""
-          class="mx-auto w-16 h-16 mb-4 opacity-80"
-        />
-        <h4 class="font-semibold text-lg text-skycare-darkblue mb-2">
+        <h4 class="font-semibold text-lg md:text-xl text-skycare-darkblue mb-2">
           에어컨 청소
         </h4>
-        <p class="text-gray-600 text-sm leading-relaxed">
+        <p class="text-gray-600 text-sm md:text-base leading-relaxed">
           냉방 효율 향상, 곰팡이 제거로 쾌적한 실내공기 유지
         </p>
       </div>
@@ -48,15 +37,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div
         class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all p-8 text-center"
       >
-        <img
-          src="/img/cleaning-icon.svg"
-          alt=""
-          class="mx-auto w-16 h-16 mb-4 opacity-80"
-        />
-        <h4 class="font-semibold text-lg text-skycare-darkblue mb-2">
-          건물 클리닝
+        <h4 class="font-semibold text-lg md:text-xl text-skycare-darkblue mb-2">
+          클리닝 서비스
         </h4>
-        <p class="text-gray-600 text-sm leading-relaxed">
+        <p class="text-gray-600 text-sm md:text-base leading-relaxed">
           사무실, 매장, 시설 맞춤 청소로 최상의 위생 환경 조성
         </p>
       </div>
@@ -64,16 +48,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div
         class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all p-8 text-center"
       >
-        <img
-          src="/img/disinfection-icon.svg"
-          alt=""
-          class="mx-auto w-16 h-16 mb-4 opacity-80"
-        />
-        <h4 class="font-semibold text-lg text-skycare-darkblue mb-2">
-          소독 및 방역
+        <h4 class="font-semibold text-lg md:text-xl text-skycare-darkblue mb-2">
+          방역 서비스
         </h4>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          인체에 안전한 약품으로 세균·바이러스 완전 차단
+        <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+          인체에 안전한 약품으로 해충 완전 차단
         </p>
       </div>
     </div>
@@ -84,15 +63,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     id="contact"
     class="mt-28 text-center py-20 bg-gradient-to-r from-skycare-light to-white rounded-3xl shadow-sm"
   >
-    <h3 class="text-3xl font-bold text-skycare-darkblue mb-4">
+    <h3 class="text-2xl md:text-3xl font-bold text-skycare-darkblue mb-4">
       지금 바로 문의하세요
     </h3>
-    <p class="text-gray-600 mb-8 text-base">
+    <p class="text-gray-600 mb-8 text-sm md:text-base">
       빠른 견적과 친절한 상담을 약속드립니다.
     </p>
     <a
       href="tel:010-0000-0000"
-      class="btn-skycare px-8 py-4 text-lg"
+      class="btn-skycare px-8 py-4 text-base md:text-lg"
     >
       전화 문의하기
     </a>

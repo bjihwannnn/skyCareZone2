@@ -1,0 +1,22 @@
+---
+const { title, subtitle, bgImage, btnText, btnLink } = Astro.props;
+---
+
+<section class="relative text-center py-28 bg-gradient-to-br from-white to-skycare-light rounded-3xl shadow-sm">
+  {bgImage && (
+    <div
+      class="absolute inset-0 bg-cover bg-center opacity-10"
+      style={`background-image: url('${bgImage}')`}
+    ></div>
+  )}
+
+  <div class="relative z-10">
+    <h2 class="text-5xl font-bold text-skycare-darkblue mb-6">{title}</h2>
+    <p class="text-gray-600 mb-8">{subtitle}</p>
+    {btnText && (
+      <a href={btnLink || "#contact"} class="btn-skycare text-lg px-8 py-4">
+        {btnText}
+      </a>
+    )}
+  </div>
+</section>

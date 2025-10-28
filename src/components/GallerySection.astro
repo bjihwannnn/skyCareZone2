@@ -1,0 +1,20 @@
+---
+const { title = "작업사진", photos } = Astro.props;
+---
+
+<section class="mt-24">
+  <h3 class="text-3xl font-bold text-skycare-darkblue mb-8 text-center">{title}</h3>
+
+  <div class="flex flex-col gap-6 items-center">
+    {photos.map((p, i) => (
+      <img
+        key={i}
+        src={p.src}
+        alt={p.alt}
+        class="rounded-2xl shadow-md hover:shadow-xl transition-all w-full md:w-1/2 max-w-2xl"
+        loading="lazy"                                 /* lazy load */
+        decoding="async"
+      />
+    ))}
+  </div>
+</section>

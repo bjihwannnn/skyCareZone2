@@ -1,0 +1,11 @@
+---
+const { title, desc, phone, btnText } = Astro.props;
+---
+
+<section id="contact" class="mt-28 text-center py-20 bg-gradient-to-r from-skycare-light to-white rounded-3xl shadow-sm">
+  <h3 class="text-3xl font-bold text-skycare-darkblue mb-4">{title}</h3>
+  <p class="text-gray-600 mb-8 text-base">{desc}</p>
+  <a href={`tel:${phone}`} class="btn-skycare px-8 py-4 text-lg">
+    {btnText || "전화 문의"}
+  </a>
+</section>
