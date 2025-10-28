@@ -7,14 +7,14 @@
 
 ## 🚀 기술 스택
 
-| 구분 | 기술 | 설명 |
-|------|------|------|
+| 구분 | 기술 |
+|------|------|
 | **Framework** | [Astro](https://astro.build/)
 | **Styling** | [Tailwind CSS](https://tailwindcss.com/)
 | **Language** | HTML, CSS, JavaScript |
 | **Font** | [Noto Sans KR](https://fonts.google.com/specimen/Noto+Sans+KR)
 
-
+<br><br><br>
 
 ## 🧱 프로젝트 구조
 
@@ -42,6 +42,7 @@ src/
 
 ```
 
+<br><br>
 
 ### 📁 layouts
 
@@ -49,7 +50,7 @@ src/
 |------|------|
 | **BaseLayout.astro** | 모든 페이지의 공통 레이아웃.<br>헤더·푸터·메인 구조 포함, SEO 및 OG 메타태그 포함. |
 
----
+<br><br>
 
 ### 📄 pages
 
@@ -60,7 +61,7 @@ src/
 | **Cleaning.astro** | 클리닝 서비스 상세 페이지. |
 | **Disinfection.astro** | 방역 서비스 상세 페이지. |
 
----
+<br><br>
 
 ### 🧩 components
 
@@ -72,7 +73,7 @@ src/
 | **GallerySection.astro** | 서비스 작업사진 갤러리. |
 | **CTASection.astro** | 하단 문의(Call To Action) 섹션. |
 
----
+<br><br>
 
 ### 🎨 styles
 
@@ -80,9 +81,7 @@ src/
 |------|------|
 | **global.css** | Tailwind CSS 설정 및 SkyCareZone 커스텀 컬러 정의.<br>`btn-skycare`, `bg-skycare-*`, `text-skycare-*` 등 전역 유틸리티 포함. |
 
-
-
-
+<br><br><br>
 
 ## 🎨 주요 디자인 컨셉
 
@@ -93,7 +92,7 @@ src/
   - Orange: `#F97316`
   - Warm: `#FDE68A`
 
-
+<br><br><br>
 
 ## 🧾 빌드 체크리스트 요약
 
@@ -107,7 +106,7 @@ src/
 | key 누락 경고 없음                  | ✅  |
 | favicon 표시 확인                 | ✅  |
 
-
+<br><br><br>
 
 ### 🧡 Branding Slogan
 
