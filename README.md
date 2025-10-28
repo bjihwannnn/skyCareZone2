@@ -40,6 +40,7 @@ src/
 └─ styles/
 └─ global.css              # Tailwind + SkyCareZone 커스텀 스타일
 
+```
 
 
 ### 📁 layouts
