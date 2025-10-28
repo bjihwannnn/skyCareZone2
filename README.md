@@ -42,45 +42,6 @@ src/
 
 ```
 
-<br><br>
-
-### 📁 layouts
-
-| 파일 | 역할 |
-|------|------|
-| **BaseLayout.astro** | 모든 페이지의 공통 레이아웃.<br>헤더·푸터·메인 구조 포함, SEO 및 OG 메타태그 포함. |
-
-<br><br>
-
-### 📄 pages
-
-| 파일 | 역할 |
-|------|------|
-| **index.astro** | 홈페이지 메인 화면.<br>서비스 요약, 소개, CTA(문의 버튼) 섹션으로 구성. |
-| **AirConditioner.astro** | 에어컨 청소 서비스 상세 페이지. |
-| **Cleaning.astro** | 클리닝 서비스 상세 페이지. |
-| **Disinfection.astro** | 방역 서비스 상세 페이지. |
-
-<br><br>
-
-### 🧩 components
-
-| 파일 | 역할 |
-|------|------|
-| **HeroSection.astro** | 페이지 상단의 메인 이미지 섹션.<br>타이틀, 설명, 버튼, 배경사진 구성. |
-| **ProcedureSection.astro** | 단계별 서비스 절차 카드 구성. |
-| **NoticeListSection.astro** | 유의사항 목록 구성. |
-| **GallerySection.astro** | 서비스 작업사진 갤러리. |
-| **CTASection.astro** | 하단 문의(Call To Action) 섹션. |
-
-<br><br>
-
-### 🎨 styles
-
-| 파일 | 역할 |
-|------|------|
-| **global.css** | Tailwind CSS 설정 및 SkyCareZone 커스텀 컬러 정의.<br>`btn-skycare`, `bg-skycare-*`, `text-skycare-*` 등 전역 유틸리티 포함. |
-
 <br><br><br>
 
 ## 🎨 주요 디자인 컨셉
