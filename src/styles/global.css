@@ -50,3 +50,22 @@
     @apply py-16 sm:py-20 md:py-28 px-4 sm:px-6;
   }
 }
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.9s ease-out forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}

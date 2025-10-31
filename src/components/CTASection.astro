@@ -1,10 +1,27 @@
 ---
-const { title, desc, btnText } = Astro.props;
+const { title, desc, btnText, phone } = Astro.props;
 ---
 
-<section id="contact" class="mt-24 text-center section-padding bg-gradient-to-r from-skycare-light to-white rounded-3xl shadow-sm">
-  <h3 class="text-2xl sm:text-3xl font-bold text-skycare-darkblue mb-4">{title}</h3>
-  <p class="text-gray-600 mb-8 text-sm sm:text-base">{desc}</p>
-  <a href="tel:010-3201-0019" class="btn-skycare px-8 py-4 text-base sm:text-lg w-full sm:w-auto">{btnText || "전화 문의"}</a>
-</section>
+<section
+  id="contact"
+  class="relative mt-24 text-center section-padding overflow-hidden rounded-3xl shadow-lg bg-[linear-gradient(135deg,#F9B77E,#74B9FF)] text-white animate-fade-up"
+>
+  <div class="absolute inset-0 bg-white/10"></div>
 
+  <div class="relative z-10">
+    <h3 class="text-2xl sm:text-3xl font-bold mb-4 drop-shadow-md">
+      {title}
+    </h3>
+
+    <p class="text-white/90 mb-8 text-sm sm:text-base">
+      {desc}
+    </p>
+
+    <a
+      href={`tel:${phone ?? "010-3201-0019"}`}
+      class="inline-block bg-white text-skycare-orange font-semibold rounded-lg px-8 py-4 text-base sm:text-lg hover: hover:scale-[1.05] transition-all duration-300"
+    >
+      {btnText || "전화 문의"}
+    </a>
+  </div>
+</section>

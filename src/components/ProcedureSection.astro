@@ -2,7 +2,7 @@
 const { title, steps = [] } = Astro.props;
 ---
 
-<section class="mt-16 sm:mt-20">
+<section class="mt-16 sm:mt-20 animate-fade-up">
   <h3 class="section-title">{title}</h3>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
     {steps.map((s, i) => (

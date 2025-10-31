@@ -1,24 +1,30 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroSection from "../components/HeroSection.astro";
+import CTASection from "../components/CTASection.astro";
 ---
 
 <BaseLayout>
   <!-- Hero Section -->
-  <section class="text-center section-padding bg-gradient-to-br from-white to-skycare-light rounded-3xl shadow-sm">
-  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-skycare-darkblue mb-4">
-    깨끗함과 따뜻함을 한 번에.
-  </h2>
-  <p class="text-gray-600 text-sm sm:text-base md:text-lg mb-10">
-    가족처럼 정성껏, <strong>스카이케어존</strong>이 책임집니다.
-  </p>
-  <a href="#contact" class="btn-skycare w-full sm:w-auto text-base sm:text-lg px-8 py-4">무료 견적 문의</a>
-</section>
+  <HeroSection
+    title="깨끗함과 따뜻함을 한 번에."
+    subtitle="가족처럼 정성껏, 스카이케어존이 책임집니다."
+    bgImage="/assets/main.jpg"
+    btnText="무료 견적 문의"
+    btnLink="#contact"
+  />
 
-<section id="services" class="mt-20 sm:mt-24">
-  <h3 class="text-center section-title mb-10">우리의 주요 서비스</h3>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all p-8 text-center">
-        <h4 class="font-semibold text-lg md:text-xl text-skycare-darkblue mb-2">
+  <!-- Services -->
+  <section id="services" class="mt-20 sm:mt-24 animate-fade-up">
+    <h3 class="text-center section-title mb-10">주요 서비스</h3>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+      <div
+        class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-300 p-8 text-center"
+      >
+        <h4
+          class="font-semibold text-lg md:text-xl text-skycare-darkblue mb-3 tracking-tight"
+        >
           에어컨 청소
         </h4>
         <p class="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -26,8 +32,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </p>
       </div>
 
-      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all p-8 text-center">
-        <h4 class="font-semibold text-lg md:text-xl text-skycare-darkblue mb-2">
+      <div
+        class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-300 p-8 text-center"
+      >
+        <h4
+          class="font-semibold text-lg md:text-xl text-skycare-darkblue mb-3 tracking-tight"
+        >
           클리닝 서비스
         </h4>
         <p class="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -35,8 +45,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </p>
       </div>
 
-      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all p-8 text-center">
-        <h4 class="font-semibold text-lg md:text-xl text-skycare-darkblue mb-2">
+      <div
+        class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-300 p-8 text-center"
+      >
+        <h4
+          class="font-semibold text-lg md:text-xl text-skycare-darkblue mb-3 tracking-tight"
+        >
           방역 서비스
         </h4>
         <p class="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -47,15 +61,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </section>
 
   <!-- CTA Section -->
-  <section id="contact" class="mt-28 text-center py-20 bg-gradient-to-r from-skycare-light to-white rounded-3xl shadow-sm">
-    <h3 class="text-2xl md:text-3xl font-bold text-skycare-darkblue mb-4">
-      지금 바로 문의하세요
-    </h3>
-    <p class="text-gray-600 mb-8 text-sm md:text-base">
-      빠른 견적과 친절한 상담을 약속드립니다.
-    </p>
-    <a href="tel:010-3201-0019" class="btn-skycare px-8 py-4 text-base md:text-lg">
-      전화 문의하기
-    </a>
-  </section>
+  <CTASection
+    title="지금 바로 문의하세요"
+    desc="빠른 견적과 친절한 상담을 약속드립니다."
+  />
 </BaseLayout>
