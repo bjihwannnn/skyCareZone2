@@ -2,21 +2,18 @@
 const { title = "작업사진", photos = [] } = Astro.props;
 ---
 
-<section class="mt-24">
-  <h3 class="text-3xl font-bold text-skycare-darkblue mb-8 text-center">{title}</h3>
-
-  <div class="flex flex-col gap-6 items-center">
-    {photos.map(function (p, i) {
-      return (
-        <img
-          key={i}
-          src={p.src}
-          alt={p.alt}
-          class="rounded-2xl shadow-md hover:shadow-xl transition-all w-full md:w-1/2 max-w-2xl"
-          loading="lazy"                                 /* lazy load */
-          decoding="async"
-        />
-      );
-    })}
+<section class="mt-16 sm:mt-20">
+  <h3 class="section-title text-center mb-6">{title}</h3>
+  <div class="grid grid-cols-1 gap-4 sm:gap-6 place-items-center">
+    {photos.map((p, i) => (
+      <img
+        key={i}
+        src={p.src}
+        alt={p.alt}
+        class="rounded-2xl shadow-md hover:shadow-xl transition-all w-full sm:w-3/4 md:w-1/2 max-w-2xl object-cover"
+        loading="lazy"
+      />
+    ))}
   </div>
 </section>
+

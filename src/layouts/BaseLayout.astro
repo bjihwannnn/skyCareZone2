@@ -52,17 +52,52 @@ import "../styles/global.css";
   <body class="bg-skycare-light text-gray-800 font-[Noto_Sans_KR] selection:bg-skycare-warm/50">
     <!-- 헤더 -->
     <header class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50">
-      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 class="text-skycare-darkblue font-bold text-xl tracking-tight">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-skycare-darkblue font-bold text-lg sm:text-xl tracking-tight">
           <a href="/">스카이케어존</a>
         </h1>
-        <nav class="space-x-6 text-gray-700 font-medium">
+
+        <!-- 모바일 메뉴 버튼 -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-skycare-darkblue text-2xl focus:outline-none"
+          aria-label="메뉴 열기"
+        >
+          ☰
+        </button>
+
+        <!-- 기본 네비게이션 -->
+        <nav
+          id="menu"
+          class="hidden md:flex space-x-6 text-gray-700 font-medium text-sm sm:text-base"
+        >
           <a href="/" class="hover:text-skycare-blue transition-colors">홈</a>
           <a href="/AirConditioner" class="hover:text-skycare-blue transition-colors">에어컨 청소</a>
           <a href="/Cleaning" class="hover:text-skycare-blue transition-colors">클리닝 서비스</a>
           <a href="/Disinfection" class="hover:text-skycare-blue transition-colors">방역 서비스</a>
+          <a href="#contact" class="hover:text-skycare-orange transition-colors">문의</a>
         </nav>
       </div>
+
+      <!-- 모바일 전용 드롭다운 메뉴 -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200 flex flex-col text-center space-y-3 py-4 text-gray-700 font-medium"
+      >
+        <a href="/" class="hover:text-skycare-blue">홈</a>
+        <a href="/AirConditioner" class="hover:text-skycare-blue">에어컨 청소</a>
+        <a href="/Cleaning" class="hover:text-skycare-blue">클리닝 서비스</a>
+        <a href="/Disinfection" class="hover:text-skycare-blue">방역 서비스</a>
+        <a href="#contact" class="hover:text-skycare-orange">문의</a>
+      </div>
+
+      <script>
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+        btn.addEventListener("click", () => menu.classList.toggle("hidden"));
+      </script>
     </header>
 
     <!-- 메인 콘텐츠 -->
