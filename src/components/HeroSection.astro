@@ -7,7 +7,7 @@ const { title, subtitle, bgImage, btnText, btnLink } = Astro.props;
     <div class="absolute inset-0 bg-[url(${bgImage})] bg-cover bg-center opacity-10"></div>
   )}
   <div class="relative z-10">
-    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-skycare-darkblue mb-6">{title}</h2>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-skycare-darkblue mb-6">{title}</h2>
     <p class="text-gray-600 mb-8 text-sm sm:text-base md:text-lg">{subtitle}</p>
     {btnText && (
       <a href={btnLink || "#contact"} class="btn-skycare text-base sm:text-lg px-8 py-4 w-full sm:w-auto">

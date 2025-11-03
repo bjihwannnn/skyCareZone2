@@ -69,3 +69,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+html, body {
+  font-family: 'SUIT Variable', 'SUIT';
+}
