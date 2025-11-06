@@ -3,16 +3,22 @@
 
 /* 색상 커스텀 */
 @layer utilities {
-  .bg-skycare-light { background-color: #E6F4F9; }
+  .bg-skycare-light { background-color: #F7FAFD; }
   .bg-skycare-blue { background-color: #3B82F6; }
   .bg-skycare-darkblue { background-color: #1E3A8A; }
   .bg-skycare-orange { background-color: #F97316; }
-  .bg-skycare-warm { background-color: #FDE68A; }
+  .bg-skycare-warm { background-color: #FFE4C1; }
   
   .text-skycare-gray { color: #6B7280; }
   .text-skycare-blue { color: #3B82F6; }
   .text-skycare-darkblue { color: #1E3A8A; }
   .text-skycare-orange { color: #F97316; }
+
+  .hover\:text-skycare-blue:hover { color: #3B82F6; }
+  .hover\:text-skycare-orange:hover { color: #F97316; }
+
+  .active\:text-skycare-blue:hover { color: #3B82F6; }
+  .active\:text-skycare-orange:hover { color: #F97316; }
 }
 
 @layer components {
