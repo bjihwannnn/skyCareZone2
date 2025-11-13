@@ -11,7 +11,7 @@ const { title = "유의사항", items = [] } = Astro.props;
     <ul class="space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed">
       {items.map((item, i) => (
         <li key={i} class="flex items-start gap-2">
-          <span class="text-skycare-blue text-lg leading-[1] mt-[2px]">•</span>
+          <span class="text-skycare-blue text-lg leading-[1] mt-[2px]">></span>
           <span>{item}</span>
         </li>
       ))}

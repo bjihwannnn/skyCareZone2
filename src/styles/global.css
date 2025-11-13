@@ -78,4 +78,5 @@ html {
 
 html, body {
   font-family: 'SUIT Variable', 'SUIT';
+  overflow-x: hidden
 }

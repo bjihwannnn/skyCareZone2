@@ -2,8 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroSection from "../components/HeroSection.astro";
 import ProcedureSection from "../components/ProcedureSection.astro";
-import NoticeList from "../components/NoticeListSection.astro";
-import PhotoGallery from "../components/GallerySection.astro";
+import NoticeListSection from "../components/NoticeListSection.astro";
+import PhotoGallerySection from "../components/GallerySection.astro";
 import CTASection from "../components/CTASection.astro";
 ---
 
@@ -11,8 +11,7 @@ import CTASection from "../components/CTASection.astro";
   <HeroSection
     title="에어컨 청소"
     subtitle="13년 이상 축적된 노하우로, 에어컨의 성능과 위생을 동시에 책임집니다."
-    bgImage="/assets/ac/ac_0.jpg"
-    btnText="예약 문의"
+    bgImage="/assets/main.jpg"
   />
 
   <ProcedureSection
@@ -25,7 +24,7 @@ import CTASection from "../components/CTASection.astro";
     ]}
   />
 
-  <NoticeList
+  <NoticeListSection
     items={[
       "주차공간이 반드시 확보되어야 하며, 주차비 발생 시 실비 청구됩니다.",
       "특정 브랜드(빌트인·천장형 등)는 추가비용이 발생할 수 있습니다.",
@@ -33,7 +32,7 @@ import CTASection from "../components/CTASection.astro";
     ]}
   />
 
-  <PhotoGallery
+  <PhotoGallerySection
     photos={[
       { src: "/assets/ac/ac_1.jpg", alt: "에어컨 작업사진 1" },
       { src: "/assets/ac/ac_2.jpg", alt: "에어컨 작업사진 2" },

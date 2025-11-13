@@ -1,18 +1,41 @@
 ---
-const { title, subtitle, bgImage, btnText, btnLink } = Astro.props;
+const { title, subtitle, bgImage = "/assets/main.jpg" } = Astro.props;
 ---
 
-<section class="relative text-center section-padding bg-gradient-to-br from-white to-skycare-light rounded-3xl shadow-sm animate-fade-up">
-  {bgImage && (
-    <div class="absolute inset-0 bg-[url(${bgImage})] bg-cover bg-center opacity-10"></div>
-  )}
-  <div class="relative z-10">
-    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-skycare-darkblue mb-6">{title}</h2>
-    <p class="text-gray-600 mb-8 text-sm sm:text-base md:text-lg">{subtitle}</p>
-    {btnText && (
-      <a href={btnLink || "#contact"} class="btn-skycare text-base sm:text-lg px-8 py-4 w-full sm:w-auto">
-        {btnText}
-      </a>
-    )}
+<section
+  class="relative w-[100vw] left-[calc(50%-50vw)] aspect-[2.4/1]"
+>
+  <!-- 배경 이미지 -->
+  <div
+    class="absolute inset-0 bg-cover bg-center"
+    style={`background-image: url('${bgImage}')`}
+  ></div>
+
+  <!-- 반투명 오버레이 -->
+  <div class="absolute inset-0 "></div>
+
+  <!-- 텍스트 콘텐츠 -->
+  <div class="relative z-10 w-full h-full">
+    <!-- 본 문구 (왼쪽 위) -->
+    <h1
+      class="absolute text-white font-extrabold drop-shadow-md leading-tight
+             text-[1.8rem] sm:text-5xl md:text-7xl
+             top-[15%] left-[10%]
+             max-w-[75%] sm:max-w-[55%] md:max-w-[50%]
+             text-left"
+    >
+      {title}
+    </h1>
+
+    <!-- 보조 문구 (오른쪽 아래) -->
+    <p
+      class="absolute text-white/90 font-medium leading-relaxed
+             text-[1rem] sm:text-xl md:text-3xl
+             bottom-[5%] right-[5%]
+             max-w-[70%] sm:max-w-[45%] md:max-w-[40%]
+             text-right"
+    >
+      {subtitle}
+    </p>
   </div>
 </section>
