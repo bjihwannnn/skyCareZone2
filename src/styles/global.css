@@ -85,6 +85,17 @@ body {
   padding: 0;
 }
 
+:root {
+  --header-height: 0px;
+}
+
+.full-screen-section {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
 /* base */
 #hero {
   aspect-ratio: 2.3 / 1;

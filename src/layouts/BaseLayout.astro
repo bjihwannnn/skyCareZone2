@@ -94,7 +94,22 @@ import "../styles/global.css";
       <script>
         const btn = document.getElementById("menu-btn");
         const menu = document.getElementById("mobile-menu");
-        
+
+        const header = document.querySelector("header");
+
+        const setHeaderHeight = () => {
+          if (header) {
+            document.documentElement.style.setProperty(
+              "--header-height",
+              `${header.offsetHeight}px`
+            );
+          }
+        };
+
+        setHeaderHeight();
+        window.addEventListener("load", setHeaderHeight);
+        window.addEventListener("resize", setHeaderHeight);
+
         if (btn && menu) {
           const menuLinks = menu.querySelectorAll("a");
 
@@ -121,7 +136,7 @@ import "../styles/global.css";
     </main>
 
     <!-- 푸터 -->
-    <footer class="bg-white border-t mt-20 py-8 text-center text-gray-500 text-sm">
+    <footer class="bg-white border-t py-8 text-center text-gray-500 text-sm">
       © 2025 스카이케어존 | 깨끗함과 따뜻함을 함께
     </footer>
   </body>
