@@ -60,8 +60,11 @@ import "../styles/global.css";
         <!-- 모바일 메뉴 버튼 -->
         <button
           id="menu-btn"
+          type="button"
           class="md:hidden text-skycare-darkblue text-2xl focus:outline-none"
           aria-label="메뉴 열기"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
         >
           ☰
         </button>
@@ -94,7 +97,24 @@ import "../styles/global.css";
       <script>
         const btn = document.getElementById("menu-btn");
         const menu = document.getElementById("mobile-menu");
-        btn.addEventListener("click", () => menu.classList.toggle("hidden"));
+
+        if (btn && menu) {
+          const menuLinks = menu.querySelectorAll("a");
+
+          const toggleMenu = () => {
+            menu.classList.toggle("hidden");
+            const isOpen = !menu.classList.contains("hidden");
+            btn.setAttribute("aria-expanded", String(isOpen));
+          };
+
+          btn.addEventListener("click", toggleMenu);
+          menuLinks.forEach((link) =>
+            link.addEventListener("click", () => {
+              menu.classList.add("hidden");
+              btn.setAttribute("aria-expanded", "false");
+            })
+          );
+        }
       </script>
     </header>
 
