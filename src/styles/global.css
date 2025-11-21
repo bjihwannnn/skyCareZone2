@@ -53,7 +53,7 @@
   }
 
   .section-padding {
-    @apply py-16 sm:py-20 md:py-28 px-4 sm:px-6;
+    @apply py-14 sm:py-16 md:py-30 px-4 sm:px-6;
   }
 }
 
@@ -78,4 +78,35 @@ html {
 
 html, body {
   font-family: 'SUIT Variable', 'SUIT';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* base */
+#hero {
+  aspect-ratio: 2.3 / 1;
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+  #hero {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* mobile portrait */
+@media (max-width: 640px) and (orientation: portrait) {
+  #hero {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+/* mobile landscape */
+@media (max-width: 640px) and (orientation: landscape) {
+  #hero {
+    aspect-ratio: 16 / 7;
+  }
 }

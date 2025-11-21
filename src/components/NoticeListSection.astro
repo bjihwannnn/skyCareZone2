@@ -2,22 +2,24 @@
 const { title = "유의사항", items = [] } = Astro.props;
 ---
 
-<section 
+<section
   id="notice"
-  class="mt-24 sm:mt-28 animate-fade-up"
+  class="section-padding animate-fade-up"
 >
-  <!-- 제목 -->
-  <h3 class="section-title mb-6">{title}</h3>
+  <div class="max-w-6xl mx-auto">
+    <!-- 제목 -->
+    <h3 class="section-title mb-6">{title}</h3>
 
-  <!-- 구분선 -->
-  <div class="border-t border-gray-200 pt-6">
-    <ul class="space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed">
-      {items.map((item, i) => (
-        <li key={i} class="flex items-start gap-2">
-          <span class="text-skycare-blue text-lg leading-[1] mt-[2px]">></span>
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
+    <!-- 구분선 -->
+    <div class="border-t border-gray-200 pt-6">
+      <ul class="space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed">
+        {items.map((item, i) => (
+          <li key={i} class="flex items-start gap-2">
+            <span class="text-skycare-blue text-lg leading-[1] mt-[2px]">></span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   </div>
 </section>
