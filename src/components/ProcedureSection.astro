@@ -4,9 +4,12 @@ const { title, steps = [] } = Astro.props;
 
 <section
   id="procedure"
-  class="animate-fade-up full-screen-section"
+  class="animate-fade-up full-screen-section bg-white"
 >
-  <div class="max-w-6xl mx-auto">
+  <div 
+    id="inner"
+    class="max-w-6xl mx-auto"
+  >
     <h3 class="section-title mb-10">{title}</h3>
 
     <div class="space-y-10 sm:space-y-12">
