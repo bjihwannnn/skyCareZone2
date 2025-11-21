@@ -8,7 +8,8 @@ const {
 ---
 
 <section
-  class="relative w-[100vw] left-[calc(50%-50vw)] aspect-[2.4/1]"
+  id="hero"
+  class="relative aspect-[2.4/1]"
 >
   <!-- 기본 이미지 -->
   <div
@@ -16,20 +17,6 @@ const {
     class="absolute inset-0 bg-cover bg-center"
     style={`background-image: url('${bgImage}')`}
   ></div>
-
-  <!-- 세로 이미지 -->
-  <style>
-    /* 세로 화면(portrait)일 때 세로 이미지 적용 */
-    @media (orientation: portrait) {
-      #hero-section {
-        aspect-ratio: 1 / 1.5; /* 세로로 더 깊게 보이게 */
-      }
-
-      #hero-bg {
-        background-image: url('${tallImage}');
-      }
-    }
-  </style>
 
   <div class="absolute inset-0"></div>
 

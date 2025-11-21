@@ -2,7 +2,10 @@
 const { title = "작업사진", photos = [] } = Astro.props;
 ---
 
-<section class="mt-24 sm:mt-28 animate-fade-up">
+<section 
+  id="gallery"
+  class="mt-24 sm:mt-28 animate-fade-up"
+>
   <!-- 제목 -->
   <h3 class="section-title text-center mb-8">{title}</h3>
 
