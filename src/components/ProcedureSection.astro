@@ -16,15 +16,15 @@ const { title, steps = [] } = Astro.props;
       {steps.map((s, i) => (
         <div key={i} class="relative pl-6 border-l-2 border-skycare-blue/30">
           <!-- 단계 번호 -->
-          <div class="absolute -left-3 top-0 w-6 h-6 flex items-center justify-center rounded-full bg-skycare-blue text-white text-xs font-semibold">
+          <div class="absolute -left-3 top-0 w-6 h-6 flex items-center justify-center rounded-full bg-skycare-blue text-white text-s font-bold">
             {i + 1}
           </div>
 
           <!-- 내용 -->
-          <h4 class="font-semibold text-lg text-skycare-darkblue mb-2">
+          <h4 class="font-bold text-lg text-skycare-darkblue mb-2">
             {s.title.replace(/^\d+️⃣?\s*/, "")}
           </h4>
-          <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+          <p class="text-gray-700 font-bold leading-relaxed text-base">
             {s.desc}
           </p>
         </div>
