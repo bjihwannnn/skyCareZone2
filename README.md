@@ -46,26 +46,38 @@ src/
 
 ## 🎨 주요 디자인 컨셉
 
-- **SkyCare 팔레트**
-  - Light: `#E6F4F9`
-  - Blue: `#3B82F6`
-  - DarkBlue: `#1E3A8A`
-  - Orange: `#F97316`
-  - Warm: `#FDE68A`
+**SkyCare 팔레트**
+- Light: `#E6F4F9`
+- Blue: `#3B82F6`
+- DarkBlue: `#1E3A8A`
+- Orange: `#F97316`
+- Warm: `#FDE68A`
 
-<br><br><br>
+<br><br>
 
-## 🧾 빌드 체크리스트 요약
+**텍스트 크기**
+- Hero
+  - main: text-6xl md:text-7xl font-extrabold
+  - sub: text-2xl md:text-3xl font-medium
+- Section title: text-3xl md:text-4xl font-bold
+- Procedure
+  - title: text-lg font-bold
+  - steps: text-base font-bold
+- Notice: text-lg font-bold
+- CTA
+  - title: text-4xl font-extrabold
+  - des: text-lg
+  - button: font-semibold
+- Index
+  - service name: text-lg md:text-xl font-semibold
+  - service des: text-sm md:text-base
+- Base
+ - header: font-medium text-sm sm:text-base
+ - footer: text-sm
 
-| 항목                            | 상태 |
-| ----------------------------- | -- |
-| Tailwind 정상 동작                | ✅  |
-| SkyCare 커스텀 색상 적용             | ✅  |
-| HeroSection 배경 정상 렌더링         | ✅  |
-| Gallery lazy-load / alt 속성 적용 | ✅  |
-| SEO/OG 메타 반영                  | ✅  |
-| key 누락 경고 없음                  | ✅  |
-| favicon 표시 확인                 | ✅  |
+
+
+
 
 <br><br><br>
 
