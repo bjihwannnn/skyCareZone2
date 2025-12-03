@@ -85,12 +85,8 @@ body {
   padding: 0;
 }
 
-:root {
-  --header-height: 0px;
-}
-
 .full-screen-section {
-  height: 87svh;
+  height: 87lvh;
   width: 100%;
   display: grid;
   align-items: center;
