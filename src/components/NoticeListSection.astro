@@ -15,7 +15,7 @@ const { title = "유의사항", items = [] } = Astro.props;
 
     <!-- 구분선 -->
     <div class="border-t border-gray-200 pt-6">
-      <ul class="space-y-3 text-gray-700 font-bold text-lg leading-relaxed">
+      <ul class="space-y-3 text-gray-700 font-bold text-lg leading-relaxed break-keep">
         {items.map((item, i) => (
           <li key={i} class="flex items-start gap-2">
             <span class="text-skycare-blue text-lg mt-[2px] mb-[2px]">></span>
