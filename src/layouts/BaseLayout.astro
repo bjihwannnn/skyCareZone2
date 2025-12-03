@@ -97,19 +97,6 @@ import "../styles/global.css";
 
         const header = document.querySelector("header");
 
-        const setHeaderHeight = () => {
-          if (header) {
-            document.documentElement.style.setProperty(
-              "--header-height",
-              `${header.offsetHeight}px`
-            );
-          }
-        };
-
-        setHeaderHeight();
-        window.addEventListener("load", setHeaderHeight);
-        window.addEventListener("resize", setHeaderHeight);
-
         if (btn && menu) {
           const menuLinks = menu.querySelectorAll("a");
 
